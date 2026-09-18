@@ -19,11 +19,14 @@ B3 = model["B3"]
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+def tanh(x):
+    return np.tanh(x)
+
 def predict(x):
     z1 = x @ W1 + B1
-    a1 = sigmoid(z1)
+    a1 = tanh(z1)
     z2 = a1 @ W2 + B2
-    a2 = sigmoid(z2)
+    a2 = tanh(z2)
     z3 = a2 @ W3 + B3
     a3 = sigmoid(z3)
     return(a3)
