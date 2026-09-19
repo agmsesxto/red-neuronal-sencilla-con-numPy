@@ -1,4 +1,4 @@
-# Neural network with numPy
+# Red neuronal con numPy
 Red neuronal sencilla hecha con numPy para calcular operaciones lógicas.
 
 <hr>
